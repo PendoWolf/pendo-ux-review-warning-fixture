@@ -44,6 +44,18 @@ export default function App() {
         <button data-testid="btn-increment" onClick={() => run("increment", api.increment)}>
           Increment
         </button>
+                    <button data-testid="btn-double" onClick={() => run("double", api.reset)}>
+                      Double
+                    </button>
+                    <button data-testid="btn-favorite" onClick={() => run("favorite", api.getState)}>
+                      ★
+                    </button>
+                    <span data-testid="double-hint" style={{ color: "#e5e5e5", fontSize: 11 }}>
+                      Tip: Double doubles your count
+                    </span>
+                    <button data-testid="btn-sync" onClick={() => run("sync", api.getState)}>
+                      sync now
+                    </button>
         <button data-testid="btn-decrement" onClick={() => run("decrement", api.decrement)}>
           Decrement
         </button>
